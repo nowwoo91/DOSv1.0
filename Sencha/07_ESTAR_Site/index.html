@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Twitter Client</title>
+    <link rel="stylesheet" href="resources/css/coverFlow.css">
+	<link rel="stylesheet" href="http://cdn.sencha.io/touch/sencha-touch-2.2.1/resources/css/sencha-touch.css" />
+    <link rel="stylesheet" href="resources/css/custom.css"><!-- Custom Lib. -->
+    <style type="text/css">
+         /**
+         * Example of an initial loading indicator.
+         * It is recommended to keep this as minimal as possible to provide instant feedback
+         * while other resources are still being loaded for the first time
+         */
+        html, body {
+            height: 100%;
+            background-color: #1985D0
+        }
+
+        .list1 .x-dataview-item {
+            width: 33%;
+            display: inline-block;
+        }
+
+        .tweet-wrapper2 {
+            display: inline-block;
+            width: 50px;
+            float: left;
+            h2 { font-weight: bold; padding-bottom: 3px; }
+            img { border-radius: 5px; float: left; }
+            .tweet2 {
+                font-size: 70%;
+                margin-left: 60px;
+                min-height: 50px;
+            }
+        }
+
+
+        .tweet-wrapper { display: block; }
+        .tweet-wrapper h2 { font-weight: bold; padding-bottom: 3px; }
+        .tweet-wrapper img { border-radius: 5px; float: left; }
+        .tweet-wrapper .tweet {
+            font-size: 70%;
+            margin-left: 60px;
+            min-height: 50px;
+        }
+
+        .thumb {
+            width: 128px;
+            vertical-align: top;
+            display: inline-block;
+            margin-right: 1.02em;
+            margin-bottom: auto;
+        }
+
+        #appLoadingIndicator {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            text-align: center;
+            width: 100%;
+            height: 30px;
+            -webkit-animation-name: appLoadingIndicator;
+            -webkit-animation-duration: 0.5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: linear;
+        }
+
+        #appLoadingIndicator > * {
+            background-color: #FFFFFF;
+            display: inline-block;
+            height: 30px;
+            -webkit-border-radius: 15px;
+            margin: 0 5px;
+            width: 30px;
+            opacity: 0.8;
+        }
+
+        @-webkit-keyframes appLoadingIndicator{
+            0% {
+                opacity: 0.8
+            }
+            50% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0.8
+            }
+        }
+    </style>
+	
+	<script src="http://cdn.sencha.io/touch/sencha-touch-2.2.1/sencha-touch-all.js"></script>
+	
+	
+    <script src="app.js"></script>
+</head>
+<body>
+    <div id="appLoadingIndicator">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
+
+

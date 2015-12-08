@@ -1,0 +1,63 @@
+.yellow1 { background-color: #FFFC1D; text-align: center; vertical-align: center }
+.yellow2 { background-color: #FFFD60; text-align: center; vertical-align: center }
+.yellow3 { background-color: #FFFEC6; text-align: center; vertical-align: center }
+
+.red1 { background-color: #FF6F29; text-align: center; vertical-align: center }
+.red2 { background-color: #FFA87D; text-align: center; vertical-align: center }
+.red3 { background-color: #FFD7C4; text-align: center; vertical-align: center }
+
+.blue1 { background-color: #4C8FFF; text-align: center; vertical-align: center }
+.blue2 { background-color: #89B5FF; text-align: center; vertical-align: center }
+.blue3 { background-color: #C6DBFF; text-align: center; vertical-align: center }
+
+
+.monsterCls {
+	background-repeat:		no-repeat;
+	background-size:			contain;
+	background-position:	50% 0;
+}
+
+.monster1-1 { background-image: url('img/monster1-1.jpg'); }
+.monster1-2 { background-image: url('img/monster1-2.jpg'); }
+.monster1-3 { background-image: url('img/monster1-3.jpg'); }
+
+.monster2-1 { background-image: url('img/monster2-1.jpg'); }
+.monster2-2 { background-image: url('img/monster2-2.jpg'); }
+.monster2-3 { background-image: url('img/monster2-3.jpg'); }
+
+.monster3-1 { background-image: url('img/monster3-1.jpg'); }
+.monster3-2 { background-image: url('img/monster3-2.jpg'); }
+.monster3-3 { background-image: url('img/monster3-3.jpg'); }
+	
+	
+a:ACTIVE, a:LINK, a:VISITED { color:#000000; text-decoration: none; }
+
+.leftMenuPanel {
+	background-color: #FFFFFF;
+	text-align: left;
+	vertical-align: middle;
+	width: 200px;
+	font-size: 15px;	
+}
+
+#leftMenu > ul > li.menu {
+	height: 40px;
+	border-top: 1px solid #AAAAAA;
+	padding:10px 0 0 0;
+	}
+
+.cls1 {
+	background-color: #FFBF00;
+	text-align: center;
+	vertical-align: center
+}
+
+.cls2 {
+	background-color: #B22222;
+	text-align: center
+}
+
+.cls3 {
+	background-color: #3B7E00;
+	text-align: center
+}
