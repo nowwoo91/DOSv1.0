@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Video To Video</title>
+  <style type="text/css">
+    /**************** Default CSS ********************/
+    body { background-color: white; padding: 20px; }
+    section {  border: 4px solid #AAA; width: 600px; text-align: center; padding: 30px;  box-shadow:7px 5px 11px #aaa;}
+    article { font-size: 30px; }
+    /**************** Default CSS ********************/
+
+    /******* HTML5 CSS3 Example ******
+    article { text-shadow:2px 2px 2px #ccc; }**/
+  </style>
+
+  <script>  	
+  function draw( ) {	
+		var video  = document.getElementById('video');
+		var canvas = document.getElementById('canvas');
+		var context = canvas.getContext('2d');
+
+		canvas.width = video.clientWidth;
+		canvas.height = video.clientHeight;
+		
+		drawVideo( video, context, video.clientWidth, video.clientWidth )
+	}
+  
+  function drawVideo( video,  context, w, h ) {
+	  
+	  // ??? drawImage를 이용하여 동영상을 캔버스에 그리기
+		// ??? setTimeout을 이용
+
+  }
+
+  </script>
+</head>
+<body>
+
+	<header>
+      <div style="text-shadow:3px 2px 3px #888;">
+        HTML5 : Video and Canvas
+      </div>
+	</header>
+
+  <section>
+    <article>					        	
+			<video id="video" width="320" controls>
+						<source src="resources/img/chrome.webm" type='video/webm; codecs="vp8, vorbis"' /> 
+						<source src="resources/img/chrome.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' /> 
+						<source src="resources/img/chrome.ogv"  type='video/ogg; codecs="theora, vorbis"' /> 
+							당신의 브라우저는 HTML5를 지원하지 않습니다. 최신 버전으로 업그레이드 해주세요.
+			</video><br/>
+			<button id="capture"  onclick="draw()" style="width: 64px;border: solid 2px #ccc;">Draw</button><br/>
+			<canvas id="canvas" width="320"></canvas>
+    </article>
+  </section>
+</body>
+</html>
